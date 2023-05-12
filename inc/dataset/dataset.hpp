@@ -1,8 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
+#include <cstdio>
 #include <cstring>
 #include <cerrno>
 #include <cstdint>

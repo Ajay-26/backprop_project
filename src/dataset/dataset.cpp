@@ -45,7 +45,7 @@ int DataSetHandler::read_file(const char *fn){
     }
     int c,i;
     int idx = 0;
-    int ret;
+    int ret = 0;
     uint8_t byte_group[4] = {0,0,0,0};
     uint32_t magic_num,n,length,width;
     //first read the magic number
@@ -191,6 +191,10 @@ int DataSetHandler::read_file(const char *fn){
 }
 
 void DataSetHandler::deinit(){
+    int i;
+    for(i=0;i<this->n_samples;i++){
+        delete[] this->values[i];
+    }
     delete[] this->labels;
     delete[] this->values;
     return;

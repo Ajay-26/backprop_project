@@ -2,7 +2,6 @@
 #include "model.hpp"
 
 int main(int argc, char **argv){
-    std::cout << "Hello world" << std::endl;
     DataSetHandler d("../mnist/train-images-idx3-ubyte","../mnist/train-labels-idx1-ubyte");
     d.parse_data();
     int layer_size[2] = {8,1};

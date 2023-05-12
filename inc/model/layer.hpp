@@ -1,9 +1,6 @@
 #pragma once
-
+#include <cstdio>
 #include <cassert>
-#include <iostream>
-#include <vector>
-#include <algorithm>
 #include <cmath>
 #include <cstring>
 #include <cstdint>

@@ -1,8 +1,5 @@
 #pragma once
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <cstdio>
 #include <cstdint>
 #include <cassert>
 class LinearLayer;
@@ -39,5 +36,5 @@ public:
     float* predict(float *inputs, int input_len);
     void prepare_dataset(DataSetHandler* dataset);
     void deinit();
-    
+
 };
