@@ -38,4 +38,6 @@ public:
     float *get_outputs();
     float* predict(float *inputs, int input_len);
     void prepare_dataset(DataSetHandler* dataset);
+    void deinit();
+    
 };

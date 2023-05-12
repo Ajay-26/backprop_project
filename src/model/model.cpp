@@ -96,3 +96,12 @@ float* Model::predict(float *inputs, int input_len){
     this->forward(inputs, input_len);
     return this->outputs;
 }
+
+void Model::deinit(){
+    int i;
+    for(i=0;i<this->n_layers;i++){
+        this->layers[i].deinit();
+    }
+    delete[] this->layers;
+    this->dataset_handler->deinit();
+}
