@@ -9,5 +9,6 @@ include_directories(
 
 file(GLOB SOURCES src/*/*.cpp)
 set(SOURCES ${SOURCES} main.cpp)
+
 message(STATUS "value of source is ${SOURCES}")
 add_executable(hpc ${SOURCES})
